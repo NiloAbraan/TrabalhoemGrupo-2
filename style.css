@@ -1,37 +1,69 @@
+:root {
+    --cor-principal: #000000; /* Preto como cor principal */
+    --cor-destaque: #1E90FF; /* Azul brilhante como cor de destaque */
+    --cor-secundaria: #E6F2FF; /* Azul claro para fundos secundários */
+    --cor-texto: #000000; /* Preto para texto */
+    --cor-borda: #1E90FF; /* Azul para bordas */
+}
+
 .caixa-principal {
-    background-color: var(--cor-principal);
+    background-color: var(--cor-secundaria);
     width: 90%;
     max-width: 600px;
     text-align: center;
     padding: 20px;
-    border: 2px solid var(--cor-destaque); /* Adicionando uma borda para destaque */
-    border-radius: 10px; /* Arredondando os cantos */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Adicionando sombra para profundidade */
+    border: 3px solid var(--cor-borda);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(30, 144, 255, 0.3);
+    margin: 0 auto; /* Centraliza a caixa na página */
 }
 
 h1 {
     color: var(--cor-destaque);
-    font-family: 'Arial', sans-serif; /* Definindo uma fonte amigável para estudantes */
-    font-size: 2em; /* Aumentando o tamanho da fonte para destaque */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.caixa-perguntas, .caixa-alternativas, .caixa-resultado {
+    text-align: center;
+    margin: 15px 0;
+    color: var(--cor-texto);
+    font-size: 1.1em;
+    line-height: 1.5;
 }
 
 button {
-    background-color: var(--cor-secundaria);
-    color: var(--cor-texto);
-    border: none;
+    background-color: var(--cor-destaque);
+    color: var(--cor-principal);
+    border: 2px solid var(--cor-borda);
     border-radius: 15px;
-    padding: 15px;
-    font-size: 1em; /* Tamanho da fonte ajustado para melhor legibilidade */
-    transition: background-color 0.3s, transform 0.2s; /* Adicionando transição para transformação */
-    cursor: pointer; /* Mudando o cursor para indicar que é clicável */
+    padding: 12px 20px;
+    font-size: 1em;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    display: block;
+    width: 80%;
+    margin: 10px auto; /* Centraliza os botões */
 }
 
 button:hover {
-    background-color: var(--cor-destaque);
-    color: var(--cor-principal);
-    transform: scale(1.05); /* Efeito de aumento ao passar o mouse */
+    background-color: var(--cor-principal);
+    color: var(--cor-destaque);
+    transform: scale(1.03);
 }
 
 button:active {
-    transform: scale(0.95); /* Efeito de redução ao clicar */
+    transform: scale(0.98);
+}
+
+.texto-resultado {
+    color: var(--cor-texto);
+    text-align: center;
+    padding: 15px;
+    background-color: rgba(230, 242, 255, 0.7);
+    border-radius: 8px;
+    margin-top: 20px;
 }
