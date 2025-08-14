@@ -2,8 +2,15 @@
     --cor-principal: #000000; /* Preto como cor principal */
     --cor-destaque: #1E90FF; /* Azul brilhante como cor de destaque */
     --cor-secundaria: #E6F2FF; /* Azul claro para fundos secundários */
-    --cor-texto: #000000; /* Preto para texto */
+    --cor-texto: #FFFFFF; /* Branco para texto */
     --cor-borda: #1E90FF; /* Azul para bordas */
+}
+
+body {
+    background-color: var(--cor-principal); /* Fundo preto */
+    color: var(--cor-texto); /* Texto em branco para contraste */
+    margin: 0; /* Remove margens padrão */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fonte padrão */
 }
 
 .caixa-principal {
@@ -20,7 +27,6 @@
 
 h1 {
     color: var(--cor-destaque);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 2em;
     text-align: center;
     margin-bottom: 20px;
