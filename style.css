@@ -6,20 +6,32 @@
     padding: 20px;
     border: 2px solid var(--cor-destaque); /* Adicionando uma borda para destaque */
     border-radius: 10px; /* Arredondando os cantos */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Adicionando sombra para profundidade */
 }
+
 h1 {
     color: var(--cor-destaque);
+    font-family: 'Arial', sans-serif; /* Definindo uma fonte amigável para estudantes */
+    font-size: 2em; /* Aumentando o tamanho da fonte para destaque */
 }
+
 button {
     background-color: var(--cor-secundaria);
     color: var(--cor-texto);
     border: none;
     border-radius: 15px;
     padding: 15px;
-    transition: background-color 0.3s;
+    font-size: 1em; /* Tamanho da fonte ajustado para melhor legibilidade */
+    transition: background-color 0.3s, transform 0.2s; /* Adicionando transição para transformação */
     cursor: pointer; /* Mudando o cursor para indicar que é clicável */
 }
+
 button:hover {
     background-color: var(--cor-destaque);
     color: var(--cor-principal);
+    transform: scale(1.05); /* Efeito de aumento ao passar o mouse */
+}
+
+button:active {
+    transform: scale(0.95); /* Efeito de redução ao clicar */
 }
